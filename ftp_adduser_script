@@ -1,0 +1,9 @@
+#!/bin/bash
+mkdir /home/ftp/$1
+useradd $1 -d /home/ftp/$1
+./ftp_passwd $1 $2
+chown $1:$1 /home/ftp/$1
+echo $1 >> /etc/allowed_users
+service vsftpd restart
+
+
