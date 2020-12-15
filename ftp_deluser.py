@@ -54,7 +54,8 @@ def deluser(user):
 
 
 if __name__ == '__main__':
-    if (len(sys.argv) > 0):
+    #print("argv len = " + str(len(sys.argv)) + ",argv[0] = " + sys.argv[0] + "\n")
+    if (len(sys.argv) > 1):
         ftpuser = sys.argv[1]
         print("Static Delete " + ftpuser)
         deluser(ftpuser)
@@ -72,4 +73,4 @@ if __name__ == '__main__':
             time.sleep(7200)
 
 
-       
+
