@@ -3,6 +3,7 @@ import os
 import string
 import time
 
+# Get the expired user
 def check_to_del(uinfo):
     str = uinfo
     user = str.split()[0]
